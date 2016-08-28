@@ -1,0 +1,15 @@
+D:\GitHub\Weixin\Xyan.IBLL\bin\Debug\Xyan.IBLL.dll
+D:\GitHub\Weixin\Xyan.IBLL\bin\Debug\Xyan.IBLL.pdb
+D:\GitHub\Weixin\Xyan.IBLL\bin\Debug\Xyan.Common.dll
+D:\GitHub\Weixin\Xyan.IBLL\bin\Debug\Xyan.Model.dll
+D:\GitHub\Weixin\Xyan.IBLL\bin\Debug\Senparc.Weixin.dll
+D:\GitHub\Weixin\Xyan.IBLL\bin\Debug\Senparc.Weixin.MP.dll
+D:\GitHub\Weixin\Xyan.IBLL\bin\Debug\EntityFramework.dll
+D:\GitHub\Weixin\Xyan.IBLL\bin\Debug\Xyan.Common.pdb
+D:\GitHub\Weixin\Xyan.IBLL\bin\Debug\Xyan.Model.pdb
+D:\GitHub\Weixin\Xyan.IBLL\bin\Debug\Senparc.Weixin.xml
+D:\GitHub\Weixin\Xyan.IBLL\bin\Debug\Senparc.Weixin.MP.xml
+D:\GitHub\Weixin\Xyan.IBLL\bin\Debug\EntityFramework.xml
+D:\GitHub\Weixin\Xyan.IBLL\obj\Debug\Xyan.IBLL.csprojResolveAssemblyReference.cache
+D:\GitHub\Weixin\Xyan.IBLL\obj\Debug\Xyan.IBLL.dll
+D:\GitHub\Weixin\Xyan.IBLL\obj\Debug\Xyan.IBLL.pdb

@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BasePermission">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" />
+    <Property Name="RequestURL" Type="varchar" MaxLength="256" />
+    <Property Name="RequestHttpType" Type="int" />
+    <Property Name="PerMission" Type="nvarchar" MaxLength="50" />
+    <Property Name="AllowEdit" Type="int" />
+    <Property Name="AllowDelete" Type="int" />
+    <Property Name="IsVisible" Type="int" />
+    <Property Name="SortCode" Type="int" />
+    <Property Name="DeletionStateCode" Type="smallint" />
+    <Property Name="Enabled" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="800" />
+    <Property Name="CreateOn" Type="datetime" />
+    <Property Name="CreateUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="ModifiedUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ActionType" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BasePermissionGroup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GroupName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="GroupType" Type="smallint" Nullable="false" />
+    <Property Name="AllowEdit" Type="int" />
+    <Property Name="AllowDelete" Type="int" />
+    <Property Name="IsVisible" Type="int" />
+    <Property Name="SortCode" Type="int" />
+    <Property Name="DeletionStateCode" Type="smallint" />
+    <Property Name="Enabled" Type="int" />
+    <Property Name="CreateOn" Type="datetime" />
+    <Property Name="CreateUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="Description" Type="nvarchar" MaxLength="800" />
+  </EntityType>
+  <EntityType Name="BaseRole">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrganizeId" Type="int" />
+    <Property Name="CategoryCode" Type="int" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Realname" Type="nvarchar" MaxLength="100" />
+    <Property Name="AllowEdit" Type="int" />
+    <Property Name="AllowDelete" Type="int" />
+    <Property Name="IsVisible" Type="int" />
+    <Property Name="SortCode" Type="int" />
+    <Property Name="DeletionStateCode" Type="int" />
+    <Property Name="Enabled" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="800" />
+    <Property Name="CreateOn" Type="datetime" />
+    <Property Name="CreateUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="ModifiedUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="BaseUser">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="32" />
+    <Property Name="UserPassword" Type="nvarchar" MaxLength="200" />
+    <Property Name="RealName" Type="nvarchar" MaxLength="50" />
+    <Property Name="QuickQuery" Type="nvarchar" MaxLength="100" />
+    <Property Name="SecurityLevel" Type="int" />
+    <Property Name="UserFrom" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="CompanyName" Type="nvarchar" MaxLength="50" />
+    <Property Name="SubCompanyID" Type="int" />
+    <Property Name="SubCompanyName" Type="nvarchar(max)" />
+    <Property Name="DepartmentID" Type="int" />
+    <Property Name="DepartmentName" Type="nvarchar" MaxLength="50" />
+    <Property Name="WorkgroupID" Type="int" />
+    <Property Name="WorkgroupName" Type="nvarchar" MaxLength="50" />
+    <Property Name="WorkCategory" Type="nvarchar" MaxLength="50" />
+    <Property Name="ChangePasswordDate" Type="datetime" />
+    <Property Name="Duty" Type="nvarchar" MaxLength="50" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Lang" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="8" />
+    <Property Name="Birthday" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="32" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="32" />
+    <Property Name="QICQ" Type="nvarchar" MaxLength="50" />
+    <Property Name="HomeAddress" Type="nvarchar" MaxLength="200" />
+    <Property Name="Theme" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsStaff" Type="int" />
+    <Property Name="IsVisible" Type="int" />
+    <Property Name="UserAddRessID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Enabled" Type="int" />
+    <Property Name="AuditStatus" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeletionStateCode" Type="int" />
+    <Property Name="Signature" Type="nvarchar" MaxLength="200" />
+    <Property Name="SortCode" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="800" />
+    <Property Name="CreateOn" Type="datetime" />
+    <Property Name="CreateUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifirdOn" Type="datetime" />
+    <Property Name="ModifiedUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="R_Group_Permission">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GroupID" Type="int" Nullable="false" />
+    <Property Name="PermissionID" Type="int" Nullable="false" />
+    <Property Name="CreateOn" Type="datetime" />
+    <Property Name="CreateUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="BasePermissionID" Type="int" Nullable="false" />
+    <Property Name="BasePermissionGroupID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="R_Group_Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GroupID" Type="int" Nullable="false" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+    <Property Name="CreateOn" Type="datetime" />
+    <Property Name="CreateUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="ModifiedUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="BaseRoleID" Type="int" Nullable="false" />
+    <Property Name="BasePermissionID" Type="int" Nullable="false" />
+    <Property Name="BasePermissionGroupID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="R_Group_User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GroupID" Type="int" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreateOn" Type="datetime" />
+    <Property Name="CreateUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="ModifiedUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="BaseUserID" Type="int" Nullable="false" />
+    <Property Name="BasePermissionGroupID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="R_Role_Permission">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+    <Property Name="PermissionID" Type="int" Nullable="false" />
+    <Property Name="CreateOn" Type="datetime" />
+    <Property Name="CreateUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="ModifiedUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="R_User_Permission">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="PermissionID" Type="int" Nullable="false" />
+    <Property Name="CreateOn" Type="datetime" />
+    <Property Name="CreateUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="ModifiedUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="R_User_Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+    <Property Name="CreateOn" Type="datetime" />
+    <Property Name="CreateUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateBy" Type="nvarchar(max)" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="ModifiedUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_BasePermissionGroupR_Group_Permission">
+    <End Role="BasePermissionGroup" Type="Self.BasePermissionGroup" Multiplicity="1" />
+    <End Role="R_Group_Permission" Type="Self.R_Group_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BasePermissionGroup">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="R_Group_Permission">
+        <PropertyRef Name="BasePermissionGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BasePermissionGroupR_Group_Role">
+    <End Role="BasePermissionGroup" Type="Self.BasePermissionGroup" Multiplicity="1" />
+    <End Role="R_Group_Role" Type="Self.R_Group_Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BasePermissionGroup">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="R_Group_Role">
+        <PropertyRef Name="BasePermissionGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BasePermissionGroupR_Group_User">
+    <End Role="BasePermissionGroup" Type="Self.BasePermissionGroup" Multiplicity="1" />
+    <End Role="R_Group_User" Type="Self.R_Group_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BasePermissionGroup">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="R_Group_User">
+        <PropertyRef Name="BasePermissionGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BasePermissionR_Group_Permission">
+    <End Role="BasePermission" Type="Self.BasePermission" Multiplicity="1" />
+    <End Role="R_Group_Permission" Type="Self.R_Group_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BasePermission">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="R_Group_Permission">
+        <PropertyRef Name="BasePermissionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BasePermissionR_Role_Permission">
+    <End Role="BasePermission" Type="Self.BasePermission" Multiplicity="1" />
+    <End Role="R_Role_Permission" Type="Self.R_Role_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BasePermission">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="R_Role_Permission">
+        <PropertyRef Name="PermissionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BaseRoleR_Group_Role">
+    <End Role="BaseRole" Type="Self.BaseRole" Multiplicity="1" />
+    <End Role="R_Group_Role" Type="Self.R_Group_Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BaseRole">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="R_Group_Role">
+        <PropertyRef Name="BaseRoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BaseRoleR_Role_Permission">
+    <End Role="BaseRole" Type="Self.BaseRole" Multiplicity="1" />
+    <End Role="R_Role_Permission" Type="Self.R_Role_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BaseRole">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="R_Role_Permission">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BaseUserR_Group_User">
+    <End Role="BaseUser" Type="Self.BaseUser" Multiplicity="1" />
+    <End Role="R_Group_User" Type="Self.R_Group_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BaseUser">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="R_Group_User">
+        <PropertyRef Name="BaseUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_R_UserInfo_ActionInfoActionInfo">
+    <End Role="BasePermission" Type="Self.BasePermission" Multiplicity="1" />
+    <End Role="R_User_Permission" Type="Self.R_User_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BasePermission">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="R_User_Permission">
+        <PropertyRef Name="PermissionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RoleR_UserInfo_Role">
+    <End Role="BaseRole" Type="Self.BaseRole" Multiplicity="1" />
+    <End Role="R_User_Role" Type="Self.R_User_Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BaseRole">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="R_User_Role">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfoR_UserInfo_ActionInfo">
+    <End Role="BaseUser" Type="Self.BaseUser" Multiplicity="1" />
+    <End Role="R_User_Permission" Type="Self.R_User_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BaseUser">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="R_User_Permission">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfoR_UserInfo_Role">
+    <End Role="BaseUser" Type="Self.BaseUser" Multiplicity="1" />
+    <End Role="R_User_Role" Type="Self.R_User_Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BaseUser">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="R_User_Role">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DataModelStoreContainer">
+    <EntitySet Name="BasePermission" EntityType="Self.BasePermission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BasePermissionGroup" EntityType="Self.BasePermissionGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BaseRole" EntityType="Self.BaseRole" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BaseUser" EntityType="Self.BaseUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="R_Group_Permission" EntityType="Self.R_Group_Permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="R_Group_Role" EntityType="Self.R_Group_Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="R_Group_User" EntityType="Self.R_Group_User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="R_Role_Permission" EntityType="Self.R_Role_Permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="R_User_Permission" EntityType="Self.R_User_Permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="R_User_Role" EntityType="Self.R_User_Role" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_BasePermissionGroupR_Group_Permission" Association="Self.FK_BasePermissionGroupR_Group_Permission">
+      <End Role="BasePermissionGroup" EntitySet="BasePermissionGroup" />
+      <End Role="R_Group_Permission" EntitySet="R_Group_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BasePermissionGroupR_Group_Role" Association="Self.FK_BasePermissionGroupR_Group_Role">
+      <End Role="BasePermissionGroup" EntitySet="BasePermissionGroup" />
+      <End Role="R_Group_Role" EntitySet="R_Group_Role" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BasePermissionGroupR_Group_User" Association="Self.FK_BasePermissionGroupR_Group_User">
+      <End Role="BasePermissionGroup" EntitySet="BasePermissionGroup" />
+      <End Role="R_Group_User" EntitySet="R_Group_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BasePermissionR_Group_Permission" Association="Self.FK_BasePermissionR_Group_Permission">
+      <End Role="BasePermission" EntitySet="BasePermission" />
+      <End Role="R_Group_Permission" EntitySet="R_Group_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BasePermissionR_Role_Permission" Association="Self.FK_BasePermissionR_Role_Permission">
+      <End Role="BasePermission" EntitySet="BasePermission" />
+      <End Role="R_Role_Permission" EntitySet="R_Role_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BaseRoleR_Group_Role" Association="Self.FK_BaseRoleR_Group_Role">
+      <End Role="BaseRole" EntitySet="BaseRole" />
+      <End Role="R_Group_Role" EntitySet="R_Group_Role" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BaseRoleR_Role_Permission" Association="Self.FK_BaseRoleR_Role_Permission">
+      <End Role="BaseRole" EntitySet="BaseRole" />
+      <End Role="R_Role_Permission" EntitySet="R_Role_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BaseUserR_Group_User" Association="Self.FK_BaseUserR_Group_User">
+      <End Role="BaseUser" EntitySet="BaseUser" />
+      <End Role="R_Group_User" EntitySet="R_Group_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_R_UserInfo_ActionInfoActionInfo" Association="Self.FK_R_UserInfo_ActionInfoActionInfo">
+      <End Role="BasePermission" EntitySet="BasePermission" />
+      <End Role="R_User_Permission" EntitySet="R_User_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RoleR_UserInfo_Role" Association="Self.FK_RoleR_UserInfo_Role">
+      <End Role="BaseRole" EntitySet="BaseRole" />
+      <End Role="R_User_Role" EntitySet="R_User_Role" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfoR_UserInfo_ActionInfo" Association="Self.FK_UserInfoR_UserInfo_ActionInfo">
+      <End Role="BaseUser" EntitySet="BaseUser" />
+      <End Role="R_User_Permission" EntitySet="R_User_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfoR_UserInfo_Role" Association="Self.FK_UserInfoR_UserInfo_Role">
+      <End Role="BaseUser" EntitySet="BaseUser" />
+      <End Role="R_User_Role" EntitySet="R_User_Role" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

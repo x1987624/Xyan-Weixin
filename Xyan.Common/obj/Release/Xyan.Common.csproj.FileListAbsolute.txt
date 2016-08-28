@@ -1,0 +1,9 @@
+D:\GitHub\Weixin\Xyan.Common\bin\Release\Xyan.Common.dll
+D:\GitHub\Weixin\Xyan.Common\bin\Release\Xyan.Common.pdb
+D:\GitHub\Weixin\Xyan.Common\bin\Release\Senparc.Weixin.dll
+D:\GitHub\Weixin\Xyan.Common\bin\Release\Senparc.Weixin.MP.dll
+D:\GitHub\Weixin\Xyan.Common\bin\Release\Senparc.Weixin.xml
+D:\GitHub\Weixin\Xyan.Common\bin\Release\Senparc.Weixin.MP.xml
+D:\GitHub\Weixin\Xyan.Common\obj\Release\Xyan.Common.csprojResolveAssemblyReference.cache
+D:\GitHub\Weixin\Xyan.Common\obj\Release\Xyan.Common.dll
+D:\GitHub\Weixin\Xyan.Common\obj\Release\Xyan.Common.pdb

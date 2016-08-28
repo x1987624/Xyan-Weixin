@@ -1,0 +1,10 @@
+D:\GitHub\Weixin\Xyan.Model\bin\Release\Xyan.Model.dll.config
+D:\GitHub\Weixin\Xyan.Model\bin\Release\Xyan.Model.dll
+D:\GitHub\Weixin\Xyan.Model\bin\Release\Xyan.Model.pdb
+D:\GitHub\Weixin\Xyan.Model\bin\Release\EntityFramework.dll
+D:\GitHub\Weixin\Xyan.Model\bin\Release\EntityFramework.SqlServer.dll
+D:\GitHub\Weixin\Xyan.Model\bin\Release\EntityFramework.xml
+D:\GitHub\Weixin\Xyan.Model\bin\Release\EntityFramework.SqlServer.xml
+D:\GitHub\Weixin\Xyan.Model\obj\Release\Xyan.Model.csprojResolveAssemblyReference.cache
+D:\GitHub\Weixin\Xyan.Model\obj\Release\Xyan.Model.dll
+D:\GitHub\Weixin\Xyan.Model\obj\Release\Xyan.Model.pdb

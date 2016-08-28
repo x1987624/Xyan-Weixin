@@ -1,0 +1,9 @@
+D:\GitHub\Weixin\Xyan.IDAL\bin\Release\Xyan.IDAL.dll
+D:\GitHub\Weixin\Xyan.IDAL\bin\Release\Xyan.IDAL.pdb
+D:\GitHub\Weixin\Xyan.IDAL\bin\Release\Xyan.Model.dll
+D:\GitHub\Weixin\Xyan.IDAL\bin\Release\EntityFramework.dll
+D:\GitHub\Weixin\Xyan.IDAL\bin\Release\Xyan.Model.pdb
+D:\GitHub\Weixin\Xyan.IDAL\bin\Release\EntityFramework.xml
+D:\GitHub\Weixin\Xyan.IDAL\obj\Release\Xyan.IDAL.csprojResolveAssemblyReference.cache
+D:\GitHub\Weixin\Xyan.IDAL\obj\Release\Xyan.IDAL.dll
+D:\GitHub\Weixin\Xyan.IDAL\obj\Release\Xyan.IDAL.pdb
