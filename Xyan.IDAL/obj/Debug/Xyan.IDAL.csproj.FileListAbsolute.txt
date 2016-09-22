@@ -7,3 +7,12 @@ D:\GitHub\Weixin\Xyan.IDAL\bin\Debug\EntityFramework.xml
 D:\GitHub\Weixin\Xyan.IDAL\obj\Debug\Xyan.IDAL.csprojResolveAssemblyReference.cache
 D:\GitHub\Weixin\Xyan.IDAL\obj\Debug\Xyan.IDAL.dll
 D:\GitHub\Weixin\Xyan.IDAL\obj\Debug\Xyan.IDAL.pdb
+D:\GitHub\Xyan-Weixin\Xyan.IDAL\bin\Debug\Xyan.IDAL.dll
+D:\GitHub\Xyan-Weixin\Xyan.IDAL\bin\Debug\Xyan.IDAL.pdb
+D:\GitHub\Xyan-Weixin\Xyan.IDAL\bin\Debug\Xyan.Model.dll
+D:\GitHub\Xyan-Weixin\Xyan.IDAL\bin\Debug\EntityFramework.dll
+D:\GitHub\Xyan-Weixin\Xyan.IDAL\bin\Debug\Xyan.Model.pdb
+D:\GitHub\Xyan-Weixin\Xyan.IDAL\bin\Debug\EntityFramework.xml
+D:\GitHub\Xyan-Weixin\Xyan.IDAL\obj\Debug\Xyan.IDAL.csprojResolveAssemblyReference.cache
+D:\GitHub\Xyan-Weixin\Xyan.IDAL\obj\Debug\Xyan.IDAL.dll
+D:\GitHub\Xyan-Weixin\Xyan.IDAL\obj\Debug\Xyan.IDAL.pdb

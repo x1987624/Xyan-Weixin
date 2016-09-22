@@ -9,3 +9,14 @@ D:\GitHub\Weixin\Xyan.DAL\bin\Debug\EntityFramework.xml
 D:\GitHub\Weixin\Xyan.DAL\obj\Debug\Xyan.DAL.csprojResolveAssemblyReference.cache
 D:\GitHub\Weixin\Xyan.DAL\obj\Debug\Xyan.DAL.dll
 D:\GitHub\Weixin\Xyan.DAL\obj\Debug\Xyan.DAL.pdb
+D:\GitHub\Xyan-Weixin\Xyan.DAL\bin\Debug\Xyan.DAL.dll
+D:\GitHub\Xyan-Weixin\Xyan.DAL\bin\Debug\Xyan.DAL.pdb
+D:\GitHub\Xyan-Weixin\Xyan.DAL\bin\Debug\EntityFramework.dll
+D:\GitHub\Xyan-Weixin\Xyan.DAL\bin\Debug\Xyan.IDAL.dll
+D:\GitHub\Xyan-Weixin\Xyan.DAL\bin\Debug\Xyan.Model.dll
+D:\GitHub\Xyan-Weixin\Xyan.DAL\bin\Debug\Xyan.IDAL.pdb
+D:\GitHub\Xyan-Weixin\Xyan.DAL\bin\Debug\Xyan.Model.pdb
+D:\GitHub\Xyan-Weixin\Xyan.DAL\bin\Debug\EntityFramework.xml
+D:\GitHub\Xyan-Weixin\Xyan.DAL\obj\Debug\Xyan.DAL.csprojResolveAssemblyReference.cache
+D:\GitHub\Xyan-Weixin\Xyan.DAL\obj\Debug\Xyan.DAL.dll
+D:\GitHub\Xyan-Weixin\Xyan.DAL\obj\Debug\Xyan.DAL.pdb
